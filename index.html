@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  .page {
+    margin-top: 0px;
+    height: 2000px;
+  }
+      /** {
+        font-family: "roboto";
+        font-size: 10pt;
+        color: #3a102d;
+
+      }*/
+     
+      svg {
+        background: #441234;
+
+      }
+      body {background-color: #441234;
+            font-family:avenir, helvetica, arial, sans-serif;}
+
+      button {
+        display: block;
+        
+        /*float: left;*/
+        /*position: fixed;*/
+        /*float:left;*/
+        border: 0px solid #441234;
+        border-color: none;
+        background-color: #3a102d;
+        border-radius: 100px;
+       /* border-radius: 8px;*/
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        width: 200px;
+        height: 100px;
+        /*left: 50%;*/
+        /*padding: 20px 20px;*/
+        font-size: 14px;
+        color: #8e7085;
+      }
+      button:hover {
+        background-color: #562948;
+        /*border: 2px solid white;*/
+        color: #00ffff;
+      }
+      button:active {
+        background-color:#00ffff;
+        color: #00ffff;
+      }
+      button:focus {
+        background-color: #562948;
+   /*     border: 2px solid #562948;*/
+        color: #07bebf;
+        outline: 0;
+      }
+      #esg:hover {
+        background-color: #562948;
+        /*border: 2px solid white;*/
+        color: #00ffff;
+      }
+      #esg:active {
+        background-color:#00ffff;
+        color: #00ffff;
+      }
+      #esg:focus {
+        background-color: #562948;
+   /*     border: 2px solid #562948;*/
+        color: #07bebf;
+        outline: 0;
+      }
+       #esg {
+        /*position: relative;*/
+        /*float:left;*/
+        /*border: 5px solid #441234;*/
+        /*margin-top: 0px;*/
+        margin-bottom: 40px;
+        border-color: none;
+        background-color: #3a102d;
+       /* border-radius: 8px;*/
+      /* margin-right: 50px;
+       margin-left: px;*/
+      /*  padding: 20px 20px;*/
+        font-size: 14px;
+        color: #8e7085;
+
+      }
+     #g:hover {
+        background-color: #562948;
+        /*border: 2px solid white;*/
+        color: #00ffff;
+      }
+      #g:active {
+        background-color:#00ffff;
+        color: #00ffff;
+      }
+      #g:focus {
+        background-color: #562948;
+   /*     border: 2px solid #562948;*/
+        color: #07bebf;
+        outline: 0;
+      }
+       #g {
+        /*position: relative;*/
+        /*float:left;*/
+        /*border: 5px solid #441234;*/
+        border-color: none;
+        background-color: #3a102d;
+       /* border-radius: 8px;*/
+    /*   margin-right: 200px;
+       margin-left: px;*/
+       /* padding: 20px 20px;*/
+        font-size: 14px;
+        color: #8e7085;
+      }
+    a {
+        text-decoration: none;
+    }
+
+    h0, text {
+      font-size: 50pt;
+      font-weight: bold;
+      color: #ece7ea;
+      font-family: avenir;
+      opacity: 1;
+     /* padding-top: 0px;*/
+      line-height: 20px;
+     }
+     t, text {
+      font-size: 40pt;
+      font-weight: normal;
+      color: #07bebf;
+      font-family: avenir;
+      opacity: 1;
+      padding-left: 10px;
+     }
+     h, text {
+      font-size: 18pt;
+      font-weight: bold;
+      color: white;
+      font-family: avenir;
+      opacity: 1;
+     }
+    h1, text {
+      font-size: 12pt;
+      font-weight: regular;
+      font-family: avenir;
+      color: #07bebf;
+     }
+     h2, text {
+      font-size: 14pt;
+      font-weight: bold;
+      font-family: avenir;
+      color: #07bebf;
+    }
+    i, text {
+      font-size: 12pt;
+      font-weight: bold;
+      font-family: avenir;
+      color: #048585;
+      padding-bottom: 0px;
+     }
+      i:hover {
+      font-size: 12pt;
+      font-weight: bold;
+      font-family: avenir;
+      color: #00ffff;
+      padding-bottom: 0px;
+     }
+    i1, text {
+      font-size: 14pt;
+      font-weight: bold;
+      font-family: avenir;
+      color: #e6f8f8;
+      padding-bottom: 0px;
+     }
+    i2, text {
+      font-size: 16pt;
+      font-weight: bold;
+      font-family: avenir;
+      color: #e6f8f8;
+      padding-top: 0px;
+     }
+    i3, text {
+      font-size: 12pt;
+      font-weight: bold;
+      font-family: avenir;
+      color: #e6f8f8;
+      }
+    p, id text {
+      width: 850px;
+      font-size: 12pt;
+      font-weight: normal;
+      font-family: avenir;
+      color: #8e7085;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+
+      /*padding-left: 200px;
+      padding-right: 200px;*/
+      text-align: left;
+      /*margin-left: 400px;
+      margin-right: 400px;*/
+    }
+
+#p1, text {
+      width: 850px;
+      font-size: 12pt;
+      font-weight: bold;
+      font-family: avenir;
+      color: #b4a0ad;
+      margin-top: 0px;
+      /*padding-left: 200px;
+      padding-right: 200px;*/
+      text-align: left;
+      /*margin-left: 400px;
+      margin-right: 400px;*/
+    }
+#p2, text {
+      width: 400px;
+      font-size: 10pt;
+      font-weight: normal;
+      font-family: avenir;
+      color: #b4a0ad;
+      letter-spacing: 10px;
+      margin-top: 0px;
+      /*padding-left: 200px;
+      padding-right: 200px;*/
+      text-align: center;
+      /*margin-left: 400px;
+      margin-right: 400px;*/
+    }
+#p3, text {
+      /*width: 400px;*/
+      /*margin-top: -10px;
+      margin-bottom: 30px;*/
+      font-size: 8pt;
+      font-weight: normal;
+      font-family: avenir;
+      color: #b4a0ad;
+      letter-spacing: 5px;
+      text-align: left;
+      margin-left: 20px;
+      /*padding-left: 200px;
+      padding-right: 200px;*/
+      /*text-align: center;*/
+      /*margin-left: 400px;
+      margin-right: 400px;*/
+    }
+    #p4, text {
+      /*width: 400px;*/
+      /*margin-top: -10px;
+      margin-bottom: 30px;*/
+      font-size: 8pt;
+      font-weight: normal;
+      font-family: avenir;
+      color: #00ffff;
+      letter-spacing: 5px;
+      text-align: left;
+      margin-left: 0px;
+      margin-top: 60px;
+    }
+     #p5, text {
+      /*width: 400px;*/
+      /*margin-top: -10px;
+      margin-bottom: 30px;*/
+      font-size: 8pt;
+      font-weight: normal;
+      font-family: avenir;
+      color: #00ffff;
+      letter-spacing: 5px;
+      text-align: left;
+      margin-left: 0px;
+      margin-top: -80px;
+      margin-bottom: 40px;
+    }
+    #p6, text {
+      /*width: 400px;*/
+      /*margin-top: -10px;
+      margin-bottom: 30px;*/
+      letter-spacing: 1px;
+      width: 200px;
+      font-size: 8pt;
+      font-weight: normal;
+      font-family: avenir;
+      color: #8e7085;
+      text-align: left;
+    
+    }
+     #p6:hover {
+      /*width: 400px;*/
+      /*margin-top: -10px;
+      margin-bottom: 30px;*/
+      letter-spacing: 1px;
+      width: 250px;
+      font-size: 11pt;
+      font-weight: normal;
+      font-family: avenir;
+      color: #00ffff;
+      text-align: left;
+    
+    }
+    #p7, text {
+      /*width: 400px;*/
+      /*margin-top: -10px;
+      margin-bottom: 30px;*/
+      letter-spacing: 1px;
+      width: 200px;
+      font-size: 8pt;
+      font-weight: normal;
+      font-family: avenir;
+      color: #8e7085;
+      text-align: left;
+    
+    }
+     #p7:hover {
+      /*width: 400px;*/
+      /*margin-top: -10px;
+      margin-bottom: 30px;*/
+      letter-spacing: 1px;
+      width: 250px;
+      font-size:11pt;
+      font-weight: normal;
+      font-family: avenir;
+      color: #00ffff;
+      text-align: left;
+    
+    }
+      hr {
+        border-top: 1px solid #8e7085;
+        border-bottom: 1px solid #3a102d;
+        border-right: 1px solid #3a102d;
+        border-left: 1px solid #3a102d;
+        opacity: .3;
+      }
+      
+      hr.head {
+        border-top: 1px solid #8e7085;
+        border-bottom: none;
+        border-right: none;
+        border-left: none;
+        margin-top: -20px;
+        margin-bottom: 40px;
+        opacity: .50;
+      }
+      
+    .buttons {
+        /*margin: auto;*/
+        /*text-align: center;*/
+        position: fixed;
+        right: 100px;
+        width: 200px;
+        /*margin-top: 100px;*/
+    }
+    /*.chart-example {
+      margin-top: 0px;
+    }*/
+    .scale {
+      transform:rotate(90deg);
+      margin-top: 0px;
+      height: 100px;
+    }
+    .data-finding {
+      width: 0px;
+      position: fixed;
+      bottom: 100px;
+      left: 100px;
+
+    }
+    b, text {
+      font-weight: bold;
+      letter-spacing: 2px;
+      width: 350px;
+      font-size: 8pt;
+      
+      font-family: avenir;
+      color: #048585;
+      text-align: left;
+
+    }
+    #rectangle{
+    width:100%;
+    height:20px;
+    z-index: -1;
+    top: 0px;
+   /* background: #3a102d;*/
+}
+  .wrapper {
+  /*  background-color: #3a102d;*/
+  }
+  .wrapper2 {
+    
+  }
+    </style>
+
+</head>
+
+<body>
+<div id="rectangle" z-index="-1"></div>
+<div class="data-finding">
+  <p id="p6"> 
+    <b>key</b><br><br>
+    bubble : company<br>
+    radius : market cap<br>
+    color : company sector<br>
+    elevation : score<br>
+  <br><br>
+  <p id="p7">
+  <b>example finding</b><br><br>
+    We can see in the Overall ESG Scores, that the Technology sector looks to be out performing the rest of the business sectors, also showing Intel as the top overall performer in The Dow 30.
+  </p>
+</div>
+  <div class="page">
+ <div class="wrapper" align="center" width="1000px">
+  <img src="http://i.imgur.com/ySTl5fP.png" alt="Well & Good" style="width:800PX;">
+  <p>In recent years, a brighter light has began to shine on companies' social responsibilty efforts. As the world's population increases and the conservation of natural resources become more important over time, long-term investors have a tremendous opportunity to invest in companies that strive to be leaders in sustainable business practices as well as align with their own personal values.
+  </p><br><br>
+  <hr class="head" width="900px">
+</div>
+<div class="wrapper2" align="center" width="1000px">
+  <p id="p1">The chart below is a visualization of the ESG scores published by MSCI (Morgan Stanley Capital International) for the companies in The DOW 30. Each company is scored and then ranked amongst their industry peers, allowing for even comparison of effort between companies with similar business processes. The Overall ESG Score is based on the individual performance of a company in three measurable categories; <a href="http://www.investopedia.com/terms/e/environmental-social-and-governance-esg-criteria.asp" target="_blank"><i>Environmental, Social, and Governance.</i></a>
+  </p>
+  </div>
+
+
+<div class="buttons">
+  <p id="p3">bubble elevation</p>
+  <button class="nav" id="esg" autofocus>Overall ESG Scores</button>
+  <button class="nav" id="e">Environmental Scores</button>
+  <button class="nav" id="s">Social Scores</button>
+  <button class="nav" id="g">Governance Scores</button>
+</div>
+<div class="chart-example" id="chart" align="center" position="absolute">
+  <p id="p4">best performers (top)</p>
+  
+  <svg>
+
+    
+  </svg>
+
+  <p id="p5">worst performers (bottom)</p>
+</div>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="bubblejava.js"></script>
+<script>
+
+    d3.csv('bubble_data.csv', function(error, data) {
+      if (error) {
+          console.error('Error getting or parsing the data.');
+          throw error;
+      }
+
+    data.forEach(function(d) {
+      d.ysector = +d.ysector
+      d["esg"] = +d["esg"]
+        console.log(d)
+  })
+   
+      var chart = bubbleChart().width(1000).height(1200);
+      d3.select('#chart').data(data).call(chart);
+    });
+
+</script>
+</div>
+
+
+</body>
